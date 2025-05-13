@@ -39,7 +39,7 @@ public sealed class ChatActionsTests : TestBase
             Name = "test.txt",
             ContentType = "text/plain"
         };
-        
+
         var request = new SendMessageRequest
         {
             ChatId = "1972139316",
@@ -63,14 +63,14 @@ public sealed class ChatActionsTests : TestBase
         // Arrange
         var chatActions = new ChatActions(InvocationContext, FileManager);
         var fileId = "AwACAgIAAxkBAAMiZ967_qGVX2dEs7OCIqzlqXFb5bEAAqpvAAJJgvFKEbMGPxMSp842BA";
-        
+
         // Act
         var downloadedFile = await chatActions.DownloadFileAsync(fileId);
 
         // Assert
         Assert.IsNotNull(downloadedFile);
         Assert.IsNotNull(downloadedFile.Name);
-        Assert.IsTrue(downloadedFile.Name.EndsWith(".oga") || downloadedFile.Name.EndsWith(".ogg"), 
+        Assert.IsTrue(downloadedFile.Name.EndsWith(".oga") || downloadedFile.Name.EndsWith(".ogg"),
             "Downloaded file should be an Ogg audio file");
         Console.WriteLine($"Voice message downloaded successfully: {downloadedFile.Name}");
     }
