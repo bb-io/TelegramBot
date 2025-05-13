@@ -12,8 +12,7 @@ namespace Apps.TelegramBot.Events.Handlers.Base;
 public abstract class BridgeEventHandler(InvocationContext invocationContext) : AppInvocable(invocationContext), IWebhookEventHandler
 {
     private const string HardcodedId = "hardcoded_id";
-    private string BridgeServiceUrl => $"{BridgeServiceBaseUrl}/webhooks/telegram";
-    private string BridgeServiceBaseUrl => invocationContext.UriInfo.BridgeServiceUrl.ToString().TrimEnd('/');
+    private string BridgeServiceUrl => $"{invocationContext.UriInfo.BridgeServiceUrl.ToString().TrimEnd('/')}/webhooks/telegrambot";
     protected abstract string Event { get; }
     
     public async Task SubscribeAsync(IEnumerable<AuthenticationCredentialsProvider> authenticationCredentialsProvider, Dictionary<string, string> values)
@@ -32,13 +31,13 @@ public abstract class BridgeEventHandler(InvocationContext invocationContext) : 
             }
         }
         
-        var bridgeService = new BridgeService(BridgeServiceBaseUrl);
+        var bridgeService = new BridgeService(BridgeServiceUrl);
         await bridgeService.SubscribeAsync(HardcodedId, Event, values["payloadUrl"]);
     }
 
     public async Task UnsubscribeAsync(IEnumerable<AuthenticationCredentialsProvider> authenticationCredentialsProvider, Dictionary<string, string> values)
     {
-        var bridgeService = new BridgeService(BridgeServiceBaseUrl);
+        var bridgeService = new BridgeService(BridgeServiceUrl);
         await bridgeService.UnsubscribeAsync(HardcodedId, Event, values["payloadUrl"]);
     }
     
