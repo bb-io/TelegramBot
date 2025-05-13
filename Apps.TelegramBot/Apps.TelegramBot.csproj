@@ -1,0 +1,28 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net8.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+        <Product>Telegram bot [experiment]</Product>
+        <Description>An example of Blackbird app</Description>
+        <Version>1.0.5</Version>
+        <CopyLocalLockFileAssemblies>true</CopyLocalLockFileAssemblies>
+        <PackageId>Apps.TelegramBot</PackageId>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <PackageReference Include="Blackbird.Applications.Sdk.Common" Version="2.12.0" />
+      <PackageReference Include="Blackbird.Applications.Sdk.Utils" Version="1.0.26" />
+      <PackageReference Include="RestSharp" Version="110.2.0" />
+      <PackageReference Include="MimeTypes" Version="2.5.2">
+        <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+        <PrivateAssets>all</PrivateAssets>
+      </PackageReference>
+    </ItemGroup>
+    
+    <ItemGroup>
+        <EmbeddedResource CopyToOutputDirectory="Always" Include="image\icon.png" />
+    </ItemGroup>
+
+</Project>
