@@ -1,0 +1,24 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net8.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+        <Product>Telegram Bot [Beta]</Product>
+        <Description>This app integrates with Telegram to send messages, manage files, and handle real-time events like receiving messages. It simplifies communication and automates interactions with Telegram chats.</Description>
+        <Version>1.0.0</Version>
+        <AssemblyName>Apps.TelegramBot</AssemblyName>
+        <RootNamespace>Apps.TelegramBot</RootNamespace>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <PackageReference Include="Blackbird.Applications.Sdk.Common" Version="2.11.0" />
+        <PackageReference Include="Blackbird.Applications.Sdk.Utils" Version="1.0.22" />
+        <PackageReference Include="Microsoft.Extensions.Options" Version="8.0.1" />
+        <PackageReference Include="MimeTypes" Version="2.5.2">
+          <PrivateAssets>all</PrivateAssets>
+          <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+        </PackageReference>
+    </ItemGroup>
+
+</Project>

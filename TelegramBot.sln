@@ -1,0 +1,52 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tests.TelegramBot", "Tests.TelegramBot\Tests.TelegramBot.csproj", "{5FFC433C-2C61-4450-BD60-EA642F225B59}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution items", "Solution items", "{005E172D-D99C-4A97-9978-367F8A1DD25C}"
+	ProjectSection(SolutionItems) = preProject
+		.gitignore = .gitignore
+		README.md = README.md
+		LICENSE = LICENSE
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Apps.TelegramBot", "Apps.TelegramBot\Apps.TelegramBot.csproj", "{45305D67-06D7-4CE6-99AC-40B03F36731C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|Any CPU = Release|Any CPU
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5FFC433C-2C61-4450-BD60-EA642F225B59}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5FFC433C-2C61-4450-BD60-EA642F225B59}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5FFC433C-2C61-4450-BD60-EA642F225B59}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{5FFC433C-2C61-4450-BD60-EA642F225B59}.Debug|x64.Build.0 = Debug|Any CPU
+		{5FFC433C-2C61-4450-BD60-EA642F225B59}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{5FFC433C-2C61-4450-BD60-EA642F225B59}.Debug|x86.Build.0 = Debug|Any CPU
+		{5FFC433C-2C61-4450-BD60-EA642F225B59}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5FFC433C-2C61-4450-BD60-EA642F225B59}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5FFC433C-2C61-4450-BD60-EA642F225B59}.Release|x64.ActiveCfg = Release|Any CPU
+		{5FFC433C-2C61-4450-BD60-EA642F225B59}.Release|x64.Build.0 = Release|Any CPU
+		{5FFC433C-2C61-4450-BD60-EA642F225B59}.Release|x86.ActiveCfg = Release|Any CPU
+		{5FFC433C-2C61-4450-BD60-EA642F225B59}.Release|x86.Build.0 = Release|Any CPU
+		{45305D67-06D7-4CE6-99AC-40B03F36731C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{45305D67-06D7-4CE6-99AC-40B03F36731C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{45305D67-06D7-4CE6-99AC-40B03F36731C}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{45305D67-06D7-4CE6-99AC-40B03F36731C}.Debug|x64.Build.0 = Debug|Any CPU
+		{45305D67-06D7-4CE6-99AC-40B03F36731C}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{45305D67-06D7-4CE6-99AC-40B03F36731C}.Debug|x86.Build.0 = Debug|Any CPU
+		{45305D67-06D7-4CE6-99AC-40B03F36731C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{45305D67-06D7-4CE6-99AC-40B03F36731C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{45305D67-06D7-4CE6-99AC-40B03F36731C}.Release|x64.ActiveCfg = Release|Any CPU
+		{45305D67-06D7-4CE6-99AC-40B03F36731C}.Release|x64.Build.0 = Release|Any CPU
+		{45305D67-06D7-4CE6-99AC-40B03F36731C}.Release|x86.ActiveCfg = Release|Any CPU
+		{45305D67-06D7-4CE6-99AC-40B03F36731C}.Release|x86.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
