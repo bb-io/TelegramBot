@@ -6,6 +6,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution items", "Solution 
 	ProjectSection(SolutionItems) = preProject
 		.gitignore = .gitignore
 		README.md = README.md
+		LICENSE = LICENSE
 	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Apps.TelegramBot", "Apps.TelegramBot\Apps.TelegramBot.csproj", "{45305D67-06D7-4CE6-99AC-40B03F36731C}"

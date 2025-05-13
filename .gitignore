@@ -3,7 +3,6 @@
 ##
 ## Get latest from https://github.com/github/gitignore/blob/master/VisualStudio.gitignore
 
-<<<<<<< HEAD
 # Other
 ceflog.txt
 
@@ -17,8 +16,6 @@ ceflog.txt
 # Authorization data folder
 Data/ 
 
-=======
->>>>>>> b0ee963a93c18628c011cd89125b3438d2eca223
 # User-specific files
 *.rsuser
 *.suo
@@ -29,12 +26,6 @@ Data/
 # User-specific files (MonoDevelop/Xamarin Studio)
 *.userprefs
 
-<<<<<<< HEAD
-=======
-# Mono auto generated files
-mono_crash.*
-
->>>>>>> b0ee963a93c18628c011cd89125b3438d2eca223
 # Build results
 [Dd]ebug/
 [Dd]ebugPublic/
@@ -42,22 +33,12 @@ mono_crash.*
 [Rr]eleases/
 x64/
 x86/
-<<<<<<< HEAD
-=======
-[Ww][Ii][Nn]32/
->>>>>>> b0ee963a93c18628c011cd89125b3438d2eca223
 [Aa][Rr][Mm]/
 [Aa][Rr][Mm]64/
 bld/
 [Bb]in/
 [Oo]bj/
-<<<<<<< HEAD
 [Ll]og/
-=======
-[Oo]ut/
-[Ll]og/
-[Ll]ogs/
->>>>>>> b0ee963a93c18628c011cd89125b3438d2eca223
 
 # Visual Studio 2015/2017 cache/options directory
 .vs/
@@ -71,16 +52,9 @@ Generated\ Files/
 [Tt]est[Rr]esult*/
 [Bb]uild[Ll]og.*
 
-<<<<<<< HEAD
 # NUNIT
 *.VisualState.xml
 TestResult.xml
-=======
-# NUnit
-*.VisualState.xml
-TestResult.xml
-nunit-*.xml
->>>>>>> b0ee963a93c18628c011cd89125b3438d2eca223
 
 # Build Results of an ATL Project
 [Dd]ebugPS/
@@ -95,12 +69,6 @@ project.lock.json
 project.fragment.lock.json
 artifacts/
 
-<<<<<<< HEAD
-=======
-# ASP.NET Scaffolding
-ScaffoldingReadMe.txt
-
->>>>>>> b0ee963a93c18628c011cd89125b3438d2eca223
 # StyleCop
 StyleCopReport.xml
 
@@ -167,12 +135,9 @@ _ReSharper*/
 *.[Rr]e[Ss]harper
 *.DotSettings.user
 
-<<<<<<< HEAD
 # JustCode is a .NET coding add-in
 .JustCode
 
-=======
->>>>>>> b0ee963a93c18628c011cd89125b3438d2eca223
 # TeamCity is a build add-in
 _TeamCity*
 
@@ -183,14 +148,6 @@ _TeamCity*
 .axoCover/*
 !.axoCover/settings.json
 
-<<<<<<< HEAD
-=======
-# Coverlet is a free, cross platform Code Coverage Tool
-coverage*.json
-coverage*.xml
-coverage*.info
-
->>>>>>> b0ee963a93c18628c011cd89125b3438d2eca223
 # Visual Studio code coverage results
 *.coverage
 *.coveragexml
@@ -238,11 +195,6 @@ PublishScripts/
 
 # NuGet Packages
 *.nupkg
-<<<<<<< HEAD
-=======
-# NuGet Symbol Packages
-*.snupkg
->>>>>>> b0ee963a93c18628c011cd89125b3438d2eca223
 # The packages folder can be ignored because of Package Restore
 **/[Pp]ackages/*
 # except build/, which is used as an MSBuild target.
@@ -267,11 +219,6 @@ BundleArtifacts/
 Package.StoreAssociation.xml
 _pkginfo.txt
 *.appx
-<<<<<<< HEAD
-=======
-*.appxbundle
-*.appxupload
->>>>>>> b0ee963a93c18628c011cd89125b3438d2eca223
 
 # Visual Studio cache files
 # files ending in .cache can be ignored
@@ -321,13 +268,7 @@ ServiceFabricBackup/
 *.bim.layout
 *.bim_*.settings
 *.rptproj.rsuser
-<<<<<<< HEAD
 *- Backup*.rdl
-=======
-*- [Bb]ackup.rdl
-*- [Bb]ackup ([0-9]).rdl
-*- [Bb]ackup ([0-9][0-9]).rdl
->>>>>>> b0ee963a93c18628c011cd89125b3438d2eca223
 
 # Microsoft Fakes
 FakesAssemblies/
@@ -363,13 +304,10 @@ paket-files/
 # FAKE - F# Make
 .fake/
 
-<<<<<<< HEAD
 # JetBrains Rider
 .idea/
 *.sln.iml
 
-=======
->>>>>>> b0ee963a93c18628c011cd89125b3438d2eca223
 # CodeRush personal settings
 .cr/personal
 
@@ -413,27 +351,9 @@ ASALocalRun/
 
 # BeatPulse healthcheck temp database
 healthchecksdb
-<<<<<<< HEAD
 *.DS_Store
 *.dmg
 *.env
 
 Tests.TelegramBot/appsettings.json
 Tests.TelegramBot/Output
-=======
-
-# Backup folder for Package Reference Convert tool in Visual Studio 2017
-MigrationBackup/
-
-# Ionide (cross platform F# VS Code tools) working folder
-.ionide/
-
-# JetBrains Rider
-.idea/
-*.sln.iml
-
-# Fody - auto-generated XML schema
-FodyWeavers.xsd
-
-*/appsettings.json
->>>>>>> b0ee963a93c18628c011cd89125b3438d2eca223
