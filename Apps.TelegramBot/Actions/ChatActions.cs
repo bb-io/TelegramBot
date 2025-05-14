@@ -53,7 +53,8 @@ public class ChatActions(InvocationContext invocationContext, IFileManagementCli
             {
                 chat_id = sendMessageRequest.ChatId,
                 text = sendMessageRequest.Message,
-                reply_to_message_id = replyToMessageId
+                reply_to_message_id = replyToMessageId,
+                parse_mode = sendMessageRequest.ParseMode,
             });
         
         var wrapper = await Client.ExecuteWithErrorHandling<ResultWrapper<TelegramMessageResponse>>(request);
@@ -73,6 +74,11 @@ public class ChatActions(InvocationContext invocationContext, IFileManagementCli
         if (!string.IsNullOrEmpty(sendMessageRequest.ReplyToMessageId))
         {
             request.AddParameter("reply_to_message_id", sendMessageRequest.ReplyToMessageId);
+        }
+
+        if (!string.IsNullOrEmpty(sendMessageRequest.ParseMode))
+        {
+            request.AddParameter("parse_mode", sendMessageRequest.ParseMode);
         }
         
         var wrapper = await Client.ExecuteWithErrorHandling<ResultWrapper<TelegramMessageResponse>>(request);

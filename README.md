@@ -41,6 +41,18 @@ For more information on creating a bot, refer to the [Telegram Bot API documenta
 
 - **On message received**: Triggered when a message is received through your Telegram bot. Returns message details including text content, message ID, chat ID, and any attached audio files. Can be filtered by chat ID or username to listen only for specific conversations.
 
+## Bird building concept
+
+Typically, you will need to use the **Send message** action together with the **On message received** event. The **Send message** action requires a chat ID to send a message to, and the Telegram API does not provide a direct way to get a user's chat ID. The **On message received** event returns the chat ID of the user who sent a message to your bot. You can use this information to send messages back to the user.
+
+If you want to send a message to a user separately, you first need to obtain their **Chat ID** from the **On message received** event and then use this ID in the **Send message** action. This is a limitation of the Telegram API, not the Blackbird implementation.
+
+## Example
+
+![Example](docs/images/example.png)
+
+This bird shows the typical flow of a Telegram bot with LLM. The bot listens for incoming messages and responds with the LLM's output. The bird can also accept audio messages, which are transcribed to text. The transcribed text is then sent to the LLM for processing.
+
 ## Feedback
 
 Do you want to use this app or do you have feedback on our implementation? Reach out to us using the [established channels](https://www.blackbird.io/) or create an issue.
