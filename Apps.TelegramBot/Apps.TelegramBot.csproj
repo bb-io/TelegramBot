@@ -6,7 +6,7 @@
         <Nullable>enable</Nullable>
         <Product>Telegram Bot [Beta]</Product>
         <Description>This app integrates with Telegram to send messages, manage files, and handle real-time events like receiving messages. It simplifies communication and automates interactions with Telegram chats.</Description>
-        <Version>1.0.1</Version>
+        <Version>1.0.2</Version>
         <AssemblyName>Apps.TelegramBot</AssemblyName>
         <RootNamespace>Apps.TelegramBot</RootNamespace>
     </PropertyGroup>

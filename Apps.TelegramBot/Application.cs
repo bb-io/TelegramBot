@@ -8,7 +8,8 @@ public class Application : IApplication, ICategoryProvider
     public IEnumerable<ApplicationCategory> Categories 
     {
         get => [
-            ApplicationCategory.SocialMedia
+            ApplicationCategory.SocialMedia,
+            ApplicationCategory.Communication
         ];
         set { }
     }
