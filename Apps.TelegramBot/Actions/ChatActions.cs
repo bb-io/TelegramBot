@@ -14,7 +14,7 @@ using RestSharp;
 
 namespace Apps.TelegramBot.Actions;
 
-[ActionList]
+[ActionList("Chat")]
 public class ChatActions(InvocationContext invocationContext, IFileManagementClient fileManagementClient) : AppInvocable(invocationContext)
 {
     [Action("Send message", Description = "Send a message to a chat for specified user")]
